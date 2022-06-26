@@ -1,8 +1,4 @@
-* {
-    margin : 0;
-    padding: 0;
-    
-}
+
 
 p {
 
@@ -11,7 +7,12 @@ p {
 
 }
 
-a{
+a {
+
     text-decoration: none;
-    background-color: aliceblue;
+    background-color: rgb(203, 203, 216);
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 3px;
+    
 }
