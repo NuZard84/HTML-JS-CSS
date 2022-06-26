@@ -1,0 +1,17 @@
+* {
+    margin : 0;
+    padding: 0;
+    
+}
+
+p {
+
+    font-size: larger;
+    font-family: sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    background-color: aliceblue;
+}
