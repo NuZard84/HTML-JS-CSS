@@ -1,0 +1,16 @@
+* {
+    font-size: 16px;
+    color: #fff;
+    background-color: #0E0B16;
+    font-family: sans-serif;
+}
+
+#header-nav{
+    
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img{
+    background-image: url(HetVarasada.png);
+}
