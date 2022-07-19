@@ -135,3 +135,72 @@ header .navbar ul li a:hover{
     font-size: 2.2rem;
     color: #fff;
 }
+
+.home .share { 
+
+    position: absolute;
+    left: 50%; top: 20rem;
+    transform: translateX(-50%);
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter: blur(.4rem);
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
+
+.home .share a { 
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0,0,0,0.2);
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+.home .share .fa-instagram{ 
+
+    border-radius: 1rem;
+    color:#000066 ;
+}   
+
+.home .share .fa-instagram:hover { 
+
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: #eee;
+    transition:  0.5s ;
+    border-radius: 2rem;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    
+   
+}   
+
+.home .share .fa-twitter{ 
+
+    border-radius: 1rem;
+    color:#000066 ;
+}   
+
+.home .share .fa-twitter:hover { 
+
+    background: linear-gradient(45deg, #acd4ed,#1DA1F2 100%);
+    color: #eee;
+    transition:  0.5s ;
+    border-radius: 2rem;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));  
+}   
+
+.home .share .fa-github{ 
+
+    border-radius: 1rem;
+    color:#000066 ;
+}   
+
+.home .share .fa-github:hover { 
+
+    background:linear-gradient(40%, 40%, circle cover, rgba(0,0,0,.5), rgba(0,0,0,1));
+    color: #eee;
+    transition:  0.5s ;
+    border-radius: 2rem;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));  
+}   
