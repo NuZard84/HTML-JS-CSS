@@ -1,16 +1,137 @@
-* {
-    font-size: 16px;
-    color: #fff;
-    background-color: #0E0B16;
+* { 
+    margin: 0px;  padding: 0px;
+    box-sizing: border-box;
     font-family: sans-serif;
-}
-
-#header-nav{
+    outline: none; border: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: normal;
     
-    border-radius: 0;
-    border: 0;
 }
 
-#logo-img{
-    background-image: url(HetVarasada.png);
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    font-size: 16px;
+    color: 0E0B16;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background : linear-gradient(#0E0B16, #000066,#6699FF);
+    padding: 5.5rem;
+    background-attachment: fixed;
+}
+
+header {
+    width: 35rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+header .user{
+
+    padding-top: 2rem;
+}
+
+header .user img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1rem rgb(191, 178, 178,0.1);
+}
+
+header .user #name {
+
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 5rem; padding-bottom: 2rem ;
+
+}
+
+header .user #post {
+
+    font-size: 1.8rem;
+    color: #eee;
+    font-weight: lighter;
+
+}
+
+header .navbar {
+
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li { 
+
+    margin-bottom: 1rem ;
+}
+
+header .navbar ul li a {
+
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+header .navbar ul li a:hover{ 
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+.container {
+
+    width: 70%;
+    height: 72vh;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding: 25rem;
+    border-radius: 1rem;
+ }
+.home {
+
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: relative ;
+    padding-bottom: 8rem;
+}
+
+.home h3 { 
+    font-size: 2.6rem;
+    font-weight: lighter;
+    color: #eee;   
+}
+
+.home .name span {
+
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+}
+.home .post {
+    padding: 1rem 0;
+}
+
+.home .post span { 
+    font-size: 2.2rem;
+    color: #fff;
 }
