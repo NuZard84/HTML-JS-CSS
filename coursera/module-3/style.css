@@ -179,7 +179,7 @@ header .navbar ul li a:hover{
 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     color: #eee;
-    transition:  0.69s ;
+    transition:  0.42s ;
     border-radius: 2rem;
     filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65));
     position: relative;
@@ -202,7 +202,7 @@ header .navbar ul li a:hover{
 
     background: linear-gradient(45deg, #6cb6e4 20%,#1DA1F2 100%);
     color: #eee;
-    transition:  0.69s ;
+    transition:  0.42s ;
     border-radius: 2rem;
     filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65));  
     position: relative;
@@ -223,7 +223,7 @@ header .navbar ul li a:hover{
 
     background: linear-gradient(45deg, #8A2BE2 20%,#8A00C2 48%,#26053b 100%);
     color: #eee;
-    transition:  0.69s ;
+    transition:  0.42s ;
     border-radius: 2rem;
     filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65));  
     position: relative;
@@ -247,6 +247,7 @@ header .navbar ul li a:hover{
     color: #eee;
     position: relative;
     bottom: 6px;
+    transition: 0.42s;
     border-radius: 2rem;
     filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65)); 
     border:  1px inset #000066 ; 
