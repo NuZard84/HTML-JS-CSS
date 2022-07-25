@@ -1,254 +1,150 @@
-* { 
-    margin: 0px;  padding: 0px;
-    box-sizing: border-box;
+:root { 
+
+    --yellow: #f9ca24;
+}
+
+*{
     font-family: sans-serif;
-    outline: none; border: none;
-    list-style-type: none;
+    margin:0; padding:0;
+    box-sizing: border-box;
     text-decoration: none;
-    font-weight: normal;
-    
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
 
-html {
+*::selection{
+    background:var(--yellow);
+    color:#333;
+}
+
+html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-body {
-    overflow: hidden;
-    font-size: 16px;
-    color: 0E0B16;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    background : linear-gradient(#0E0B16, #000066,#6699FF);
-    padding: 5.5rem;
-    background-attachment: fixed;
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+    border-radius: 0.28rem;
+}
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    color: #fff;
 }
 
 header {
+
+    position: fixed;
+    top: 0; bottom: 0;
+    z-index: 10;
+    height: 100%;
     width: 35rem;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
-    backdrop-filter: blur(.4rem);
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column ;
     text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
-
-}
-
-header .user{
-
-    padding-top: 2rem;
 }
 
 header .user img{
-    margin: 1rem 0;
-    height: 15rem;
-    width: 15rem;
+    
+    height: 17rem;
+    width:  17rem;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 0 1rem rgb(191, 178, 178,0.1);
+    margin-bottom: 1rem;
+    border: 0.6rem solid var(--yellow);
+
 }
 
-header .user #name {
-
-    font-size: 3rem;
+header .user #name { 
+    font-size: 3.2rem;
     color: #fff;
-    padding-top: 5rem; padding-bottom: 2rem ;
 
 }
 
-header .user #post {
-
-    font-size: 1.8rem;
-    color: #eee;
-    font-weight: lighter;
-
+header .user #post { 
+    font-size: 2rem;
+    color: #fff;
+    
 }
 
-header .navbar {
-
-    padding: 1rem 3rem;
+header .navbar { 
+    width: 100%;
 }
 
-header .navbar ul li { 
-
-    margin-bottom: 1rem ;
+header .navbar ul { 
+    list-style: none;
+    padding: 2rem 3rem;
 }
 
-header .navbar ul li a {
-
+header .navbar ul li a { 
     display: block;
     padding: 1rem;
-    font-size: 2rem;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
+    margin: 1.5rem 0rem;
+    background: #333;
     color: #fff;
-    transition: all 0.2s linear;
+    font-size: 2rem;
+    border-radius: 1.2rem;
 }
 
-header .navbar ul li a:hover{ 
-    background: rgba(255, 255, 255, 0.5);
+
+header .navbar ul li a:hover {
+
+    background: var(--yellow);
     color: #333;
 }
 
-.container {
-
-    width: 70%;
-    height: 80vh;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
-    backdrop-filter: blur(.4rem);
-    text-align: center;
-    padding: 25rem;
-    border-radius: 1rem;
- }
-.home {
-
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    position: relative ;
-    padding-bottom: 8rem;
-}
-
-.home h3 { 
-    font-size: 2.6rem;
-    font-weight: lighter;
-    color: #eee;   
-}
-
-.home .name span {
-
-    font-size: 4rem;
+#menu {
+    position: fixed;
+    z-index: 11 ;
+    background: #333;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2.5rem;
+    background: #333;
     color: #fff;
-    font-weight: bold;
-}
-.home .post {
-    padding: 1rem 0;
+    display: none;
 }
 
-.home .post span { 
-    font-size: 2.2rem;
-    color: #fff;
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
 }
 
-.home .share { 
+@media (max-width:991px) {
+    header {
 
-    position: absolute;
-    left: 50%; top: 24rem;
-    transform: translateX(-50%);
-    display: flex;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.3);
-    backdrop-filter: blur(.4rem);
-    padding: 0.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid #000066;
+        left: -120%;
+        
+    }
 
+    #menu{ 
+        display: block;
+    }
+
+    header.toggle {
+        left: 0;
+    }
 }
 
-.home .share:hover { 
+@media (max-width:480px) {
+    header {
 
-    filter: drop-shadow(3px 5px 2px rgba(33, 18, 149, 0.8));
-    transition: 0.69s;
-}
-
-.home .share a { 
-
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: rgba(0,0,0,0.2);
-    padding: 1rem 2rem;
-    margin: 1rem;
-    
-}
-
-.home .share .fa-instagram{ 
-
-    border-radius: 1.5rem;
-    color:#000066 ;
-    bottom: 0px;
-    transition: 0.2s;
-    border:  1.5px inset #000066;
-}   
-
-.home .share .fa-instagram:hover { 
-
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    color: #eee;
-    transition:  0.42s ;
-    border-radius: 2rem;
-    filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65));
-    position: relative;
-    bottom: 6px;
-    border:  1px inset #000066 ;
-    
-   
-}   
-
-.home .share .fa-twitter{ 
-
-    border-radius: 1rem;
-    color:#000066 ;
-    bottom: 0px;
-    transition: 0.2s;
-    border:  1.5px inset #000066;
-}   
-
-.home .share .fa-twitter:hover { 
-
-    background: linear-gradient(45deg, #6cb6e4 20%,#1DA1F2 100%);
-    color: #eee;
-    transition:  0.42s ;
-    border-radius: 2rem;
-    filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65));  
-    position: relative;
-    bottom: 6px;
-    border:  1px inset #000066 ;
-}   
-
-.home .share .fa-github{ 
-
-    border-radius: 1rem;
-    color:#000066 ;
-    bottom: 0px;
-    transition: 0.2s;
-    border:  1.5px inset #000066;
-}   
-
-.home .share .fa-github:hover { 
-
-    background: linear-gradient(45deg, #8A2BE2 20%,#8A00C2 48%,#26053b 100%);
-    color: #eee;
-    transition:  0.42s ;
-    border-radius: 2rem;
-    filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65));  
-    position: relative;
-    bottom: 6px;
-    border:  1px inset #000066 ;
-}
-
-.home .share .fa-linkedin{ 
-
-    border-radius: 1rem;
-    color:#000066 ;
-    bottom: 0px;
-    transition: 0.2s;
-    border:  1.5px inset #000066;
-    
-}   
-
-.home .share .fa-linkedin:hover { 
-
-    background: linear-gradient(45deg,#2867B2 15%, #0a7599 90%);
-    color: #eee;
-    position: relative;
-    bottom: 6px;
-    transition: 0.42s;
-    border-radius: 2rem;
-    filter: drop-shadow(3px 7px 2px rgb(0 0 0 / 0.65)); 
-    border:  1px inset #000066 ; 
+        width: 100%;
+    }
 }
