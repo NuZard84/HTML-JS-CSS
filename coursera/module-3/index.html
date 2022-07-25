@@ -14,6 +14,7 @@
 <body>
     <!-- header seaction-->
     <header>
+       
         <div class="user">
             <img src="mypic.jpeg" alt="MyPhoto">
             <h3 id="name">Het Varasada</h3>
@@ -30,6 +31,7 @@
 
             </ul>
         </nav>
+    
     </header>
 
     <div id="menu" class="fas fa-bars"></div>
@@ -47,11 +49,6 @@
                 $('header').toggleClass('toggle');
             });
 
-            $(window).on('scroll load', function(){
-                $('#menu').removeClass('fa-times');
-                $('header').removeClass('toggle');
-
-            });
         });
 
         // var type = new Typed('.typing-text', {

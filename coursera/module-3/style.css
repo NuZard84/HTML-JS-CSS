@@ -93,10 +93,10 @@ header .navbar ul li a {
     display: block;
     padding: 1rem;
     margin: 1.5rem 0rem;
-    background: #333;
+    background-color:  #333;
     color: #fff;
     font-size: 2rem;
-    border-radius: 1.2rem;
+    border-radius: 2rem;
 }
 
 
@@ -121,30 +121,49 @@ header .navbar ul li a:hover {
 }
 
 @media (max-width:1200px) {
-    html {
+
+    *{
         font-size: 55%;
     }
+
 }
 
-@media (max-width:991px) {
-    header {
+@media (max-width : 991px) {
 
+    #menu {
+        display: block;
+    }
+
+    header {
         left: -120%;
         
     }
 
-    #menu{ 
-        display: block;
-    }
-
     header.toggle {
+
         left: 0;
     }
 }
 
-@media (max-width:400px) {
-    header {
+@media  (max-width : 501px) {
 
-        width: 100vw;
+    #menu {
+        display: block;
+    }
+
+    header {
+        left: -120%;
+        width: 100%;
+    }
+
+    header.toggle {
+
+        left: 0;
+    }
+
+    header .navbar ul li a {
+        width: 80%;
+        position: relative;
+        left: 4.9rem;
     }
 }
