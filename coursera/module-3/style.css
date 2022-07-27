@@ -147,29 +147,10 @@ header .navbar ul li a:hover {
     }
 }
 @media (max-width: 768px){
+
     header{
         Width: 100vh;
-}
-}
-@media(max-width : 501px) {
-
-    #menu {
-        display: block;
-    }
-
-    header {
-       
-        width: 100%;
-    }
-
-    header.toggle {
-
-        left: 0;
-    }
-
-    header .navbar ul li a {
-        width: 80%;
-        position: relative;
-        left: 4.9rem;
     }
 }
+
+    
