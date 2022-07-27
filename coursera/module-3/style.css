@@ -146,8 +146,12 @@ header .navbar ul li a:hover {
         left: 0;
     }
 }
-
-@media (min-width:325px) and (max-width : 501px) {
+@media (max-width: 768px){
+    header{
+        Width: 100vh;
+}
+}
+@media(max-width : 501px) {
 
     #menu {
         display: block;
