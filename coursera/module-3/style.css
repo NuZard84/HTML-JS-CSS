@@ -51,7 +51,7 @@ header {
     bottom: 0;
     z-index: 10;
     height: 100%;
-    /* width: 35rem; */
+     width: 35rem; 
     padding: 12rem;
     background: #1a1a1a;
     display: flex;
@@ -163,7 +163,7 @@ header .navbar ul li a:hover {
         left: 0;
     }
 
-    header > .navbar > ul > li > a {
+    header .navbar ul li a {
         width: 80%;
         position: relative;
         left: 4.9rem;
