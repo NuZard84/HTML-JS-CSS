@@ -146,7 +146,7 @@ header .navbar ul li a:hover {
         left: 0;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 280px){
 
     header{
         Width: 100vh;
